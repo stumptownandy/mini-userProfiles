@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="userProfiles">
+<head>
+<title>Hello kittens</title>
+</head>
+<body ng-controller="mainController">
+<div ng-repeat= "user in users"> 
+	<p>Name: {{user.first_name}} {{user.last_name}}</p>
+	<img src = "{{user.avatar}}" >
+<!-- {{ user }} -->
+</div>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
+
+<script src="app.js"></script>
+<script src="controller.js"></script>
+<script src="service.js"></script>
+</body>
+
+</html> 
